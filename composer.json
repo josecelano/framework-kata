@@ -1,0 +1,25 @@
+{
+  "name": "josecelano/framework-kata",
+  "license": "MIT",
+  "require-dev": {
+    "phpunit/phpunit": "^4.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "JoseCelano\\": "src/JoseCelano"
+    },
+    "files": [
+      "src/JoseCelano/Framework/helpers.php",
+      "src/JoseCelano/Component/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "JoseCelano\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "tests": "phpunit --bootstrap ./tests/bootstrap.php --configuration phpunit.xml",
+    "atests": "phpunit --bootstrap ./tests/bootstrap.php --configuration phpunit.acceptance.xml"
+  }
+}
