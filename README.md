@@ -60,4 +60,3 @@ php -f ./app/console.php create-user "josecelano" "josecelano@gmail.com" "1234"
 
 * Testing.
 * Use decorator pattern instead of inheritance for components that extend other components (A, Alert, Page, ...)
-* NO SE PUEDE CREAR USUARIO duplicate email!!!!!!!!!!!!!!!!!
